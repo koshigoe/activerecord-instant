@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'activerecord/instant/version'
+require 'active_record/instant/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "activerecord-instant"
-  spec.version       = Activerecord::Instant::VERSION
+  spec.version       = ActiveRecord::Instant::VERSION
   spec.authors       = ["koshigoe"]
   spec.email         = ["koshigoeb@gmail.com"]
 

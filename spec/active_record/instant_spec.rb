@@ -1,11 +1,11 @@
 require 'spec_helper'
 
-describe Activerecord::Instant do
+describe ActiveRecord::Instant do
   it 'has a version number' do
-    expect(Activerecord::Instant::VERSION).not_to be nil
+    expect(ActiveRecord::Instant::VERSION).not_to be nil
   end
 
-  let(:instant) { Activerecord::Instant.new('instant_models', extensions: extensions) }
+  let(:instant) { ActiveRecord::Instant.new('instant_models', extensions: extensions) }
   let(:extensions) { [] }
 
   describe '#table_name' do
@@ -204,8 +204,8 @@ describe Activerecord::Instant do
     end
 
     context 'temporary table does not exist' do
-      it 'raise Activerecord::Instant::TemporaryTableNotExist' do
-        expect { subject }.to raise_error(Activerecord::Instant::TemporaryTableNotExist)
+      it 'raise ActiveRecord::Instant::TemporaryTableNotExist' do
+        expect { subject }.to raise_error(ActiveRecord::Instant::TemporaryTableNotExist)
       end
     end
   end

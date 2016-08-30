@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'activerecord/instant'
+require 'active_record/instant'
 require 'database_cleaner'
 
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: ':memory:')

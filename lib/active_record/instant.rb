@@ -1,7 +1,7 @@
-require "activerecord/instant/version"
 require "active_record"
+require "active_record/instant/version"
 
-module Activerecord
+module ActiveRecord
   class Instant
     class TemporaryTableNotExist < StandardError; end
 
