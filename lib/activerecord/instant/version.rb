@@ -1,5 +1,5 @@
 module Activerecord
-  module Instant
+  class Instant
     VERSION = "0.1.0"
   end
 end
